@@ -15,6 +15,6 @@ def test_your_url():
         "code": "gg",
         "url": "http://wwww.google.com",
     })
-    with open("_resp.txt", "wb"):
+    with open("_resp.txt", "wb") as file:
         file.write(response)
     assert response.status_code == 200    
