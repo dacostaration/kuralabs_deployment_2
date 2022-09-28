@@ -1,7 +1,7 @@
 # kuralabs_deployment_2
 Testing stage of the CI/CD pipeline deployment 2
 
-Objective: The objective of Deployment 2 is to understand the various components of the stages in a basic CI/CD pipeline.
+Objective: The objective of Deployment 2 is to understand the various components of the stages in a basic CI/CD pipeline. 
 
 ![Deployment 02](Kura_Deployment02.jpg)
 
