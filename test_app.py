@@ -14,7 +14,7 @@ def test_your_url():
     res = "http://deployment02-main-dev.us-east-2.elasticbeanstalk.com/gg"   # if we wanted to compare the result of the "shortened" url, this is what is should be
     response = app.test_client().post("/your-url", data={
         "code": "gg",
-        "url": "http://wwww.google.com",
+        "url": "http://www.google.com",
     })
 #     data = json.loads(response.get_data(as_text=True))
 #     with open("_resp.txt", "w") as file:
