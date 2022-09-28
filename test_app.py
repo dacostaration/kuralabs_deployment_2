@@ -1,4 +1,5 @@
 from application import app
+import json
 
 # def test_quick():
 #   a = "jeff"
@@ -15,6 +16,7 @@ def test_your_url():
         "code": "gg",
         "url": "http://wwww.google.com",
     })
+    data = json.loads(response.get_data(as_text=True))
     with open("_resp.txt", "w") as file:
-        file.write(response)
+        file.write(data)
     assert response.status_code == 200    
