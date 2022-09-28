@@ -16,7 +16,12 @@ def test_your_url():
         "code": "gg",
         "url": "http://wwww.google.com",
     })
-    data = json.loads(response.get_data(as_text=True))
-    with open("_resp.txt", "w") as file:
-        file.write(data)
+#     data = json.loads(response.get_data(as_text=True))
+#     with open("_resp.txt", "w") as file:
+#         file.write(data)
     assert response.status_code == 200    
+    
+def test_short_url():
+    response = app.test_client().get('/gg')
+    assert response.status_code == 302
+    assert response.location == 'http://www.google.com'
